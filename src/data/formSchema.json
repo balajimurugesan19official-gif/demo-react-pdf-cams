@@ -1,0 +1,47 @@
+[
+  {
+    "id": "firstName",
+    "label": "First Name",
+    "type": "text",
+    "value": "RJ Kultheep",
+    "bbox": { "page": 1, "x": 150, "y": 240, "width": 180, "height": 20 }
+  },
+  {
+    "id": "accountNumber",
+    "label": "Account Number",
+    "type": "text",
+    "value": "4458312548",
+    "bbox": { "page": 1, "x": 320, "y": 190, "width": 260, "height": 20 }
+  },
+  {
+    "id": "branch",
+    "label": "Mobile Number",
+    "type": "text",
+    "value": "6378951260",
+    "bbox": { "page": 1, "x": 195, "y": 360, "width": 120, "height": 20 }
+  },
+  {
+    "id": "dob",
+    "label": "Date of Birth (DD-MM-YYYY)",
+    "type": "date",
+    "value": "1995-08-24",
+    "bbox": { "page": 1, "x": 180, "y": 400, "width": 180, "height": 20 }
+  },
+  {
+    "id": "email",
+    "label": "Email ID",
+    "type": "text",
+    "value": "rjkultheep@example.com",
+    "bbox": { "page": 1, "x": 180, "y": 380, "width": 220, "height": 20 }
+  },
+  {
+    "id": "accountType",
+    "label": "Account Type (Please tick)",
+    "type": "checkbox-group",
+    "options": [
+      { "label": "Self", "value": true },
+      { "label": "Joint Account Holder", "value": false }
+    ],
+    "bbox": { "page": 1, "x": 150, "y": 320, "width": 70, "height": 20 }
+  }
+]

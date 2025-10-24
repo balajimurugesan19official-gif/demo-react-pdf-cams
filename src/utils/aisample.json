@@ -1,0 +1,32 @@
+[
+  {
+    "id": "account_holder_name",
+    "label": "Account Holder Name",
+    "type": "text",
+    "value": "John Doe"
+  },
+  {
+    "id": "account_number",
+    "label": "Account Number",
+    "type": "number",
+    "value": "1234567890"
+  },
+  {
+    "id": "dob",
+    "label": "Date of Birth",
+    "type": "date",
+    "value": "1989-02-17"
+  },
+  {
+    "id": "mobile_number",
+    "label": "Mobile Number",
+    "type": "number",
+    "value": "9876543210"
+  },
+  {
+    "id": "email_id",
+    "label": "Email ID",
+    "type": "text",
+    "value": "john.doe@example.com"
+  }
+]
