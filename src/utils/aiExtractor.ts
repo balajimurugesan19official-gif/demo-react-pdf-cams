@@ -2,6 +2,7 @@
 // ✅ JSON-driven extractor with future AI integration (commented)
 
 import * as formSchema from '../data/formSchema.json';
+import { ExtractedFieldListSchema } from './validation'; // ✅ Zod schema import
 
 export interface ExtractedField {
   id: string;
@@ -24,7 +25,15 @@ export async function extractFieldsFromPDF(
     formSchema) as ExtractedField[];
   console.log('✅ Loaded fields from JSON:', fields);
 
-  return fields;
+  // ✅ Validate using Zod schema before returning
+  const parsed = ExtractedFieldListSchema.safeParse(fields);
+  if (!parsed.success) {
+    console.error('Zod validation failed:', parsed.error.format());
+    throw new Error('Invalid field structure from extractor');
+  }
+
+  console.log(' Zod validation passed');
+  return parsed.data;
 
   /* 
   ====================== FUTURE: AI-BASED EXTRACTION ======================
